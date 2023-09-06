@@ -13,10 +13,10 @@ dict-LOW.txt
 
 ## Output
 Prints the number of found words from each file to the terminal as output.
-The final results are printed at the end of the output in the form of:
-summWordsHigh=0
-summWordsMedium=0
-summWordsLow=0
+The final results are printed at the end of the output in the form of:  
+summWordsHigh=0  
+summWordsMedium=0  
+summWordsLow=0  
 
 ## IDE Visual studio 
 (Visual studio download)[https://visualstudio.microsoft.com/ru/downloads/]
