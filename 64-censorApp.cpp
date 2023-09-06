@@ -11,7 +11,7 @@ std::unordered_map<std::string, int> dictionaryHigh;
 std::unordered_map<std::string, int> dictionaryMedium;
 std::unordered_map<std::string, int> dictionaryLow;
 
-auto fileSize = -1;
+size_t fileSize = -1;
 const int minimumWordSize = 3;
 
 long long getCurrentTimeMillis() {
@@ -157,8 +157,8 @@ int main(int argc, char* argv[]) {
 		currentTime = getCurrentTimeMillis();
 		if (currentTime - lastPrintTime > 1000)
 		{
-			std::streampos fileSizeCurrent = file.tellg(); // Get the position, which is the file size
-			int percentOfFile = (100 * fileSizeCurrent) / fileSize;
+			size_t fileSizeCurrent = file.tellg(); // Get the position, which is the file size
+			size_t percentOfFile = (100 * fileSizeCurrent) / fileSize;
 			std::cout << percentOfFile << " % " << "complete" << std::endl;
 			lastPrintTime = currentTime;
 			flagPrintTime = true;
